@@ -9,10 +9,9 @@ import com.example.herolist.Adapter.HeroAdapter
 import com.example.herolist.databinding.FragmentListBinding
 
 
-class ListFragment : Fragment() {
+class ListFragment(val heroList: ArrayList<Hero>) : Fragment() {
 
     lateinit var binding: FragmentListBinding
-    lateinit var heroList: ArrayList<Hero>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
