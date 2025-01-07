@@ -5,4 +5,5 @@ import java.io.Serializable
 data class Hero(
     val name : String,
     val imageUrl: String,
+    val detail: String
 ): Serializable

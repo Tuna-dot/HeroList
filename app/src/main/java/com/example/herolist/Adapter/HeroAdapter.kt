@@ -16,7 +16,7 @@ class HeroAdapter(private val heroList: ArrayList<Hero>,
     class ViewHolder(private val binding: ItemListBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(hero: Hero) {
             binding.textView.text = hero.name
-            Glide.with(binding.imageView)
+            Glide.with(binding.root)
                 .load(hero.imageUrl)
                 .into(binding.imageView)
 

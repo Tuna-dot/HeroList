@@ -36,6 +36,7 @@ class DetailFragment : Fragment() {
         arguments?.let {bundle ->
             val hero = bundle.getSerializable("key") as Hero
             textView.text = hero.name
+            textViewDetail.text = hero.detail
             Glide.with(imageViewDetail)
                 .load(hero.imageUrl)
                 .into(imageViewDetail)
