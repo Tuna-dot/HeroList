@@ -26,11 +26,14 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         loadData()
         initialize()
     }
 
     private fun loadData() {
+        heroList.clear()
+
         heroList.add(
             Hero(
                 name = "Доктор Стрендж",
